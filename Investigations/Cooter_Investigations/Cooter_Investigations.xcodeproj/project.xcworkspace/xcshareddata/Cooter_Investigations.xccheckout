@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>211B7B4B-99E3-4892-ACB4-993ABEAE47CC</string>
+	<key>IDESourceControlProjectName</key>
+	<string>project</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6CA947F16DC4BF09E398EF0735ED50D2AE33B01F</key>
+		<string>https://github.com/sharaaU7/cooter_iOS.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Investigations/Cooter_Investigations/Cooter_Investigations.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6CA947F16DC4BF09E398EF0735ED50D2AE33B01F</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/sharaaU7/cooter_iOS.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6CA947F16DC4BF09E398EF0735ED50D2AE33B01F</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6CA947F16DC4BF09E398EF0735ED50D2AE33B01F</string>
+			<key>IDESourceControlWCCName</key>
+			<string>cooter_iOS</string>
+		</dict>
+	</array>
+</dict>
+</plist>
