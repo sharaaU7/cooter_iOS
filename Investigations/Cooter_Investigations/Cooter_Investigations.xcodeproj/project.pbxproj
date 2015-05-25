@@ -9,13 +9,14 @@
 /* Begin PBXBuildFile section */
 		846B59431AEE9CE000BE427B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B59421AEE9CE000BE427B /* main.m */; };
 		846B59461AEE9CE000BE427B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B59451AEE9CE000BE427B /* AppDelegate.m */; };
-		846B59491AEE9CE000BE427B /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B59481AEE9CE000BE427B /* RootViewController.m */; };
-		846B594C1AEE9CE000BE427B /* DataViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B594B1AEE9CE000BE427B /* DataViewController.m */; };
-		846B594F1AEE9CE000BE427B /* ModelController.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B594E1AEE9CE000BE427B /* ModelController.m */; };
 		846B59521AEE9CE000BE427B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 846B59501AEE9CE000BE427B /* Main.storyboard */; };
 		846B59541AEE9CE000BE427B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 846B59531AEE9CE000BE427B /* Images.xcassets */; };
 		846B59571AEE9CE000BE427B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 846B59551AEE9CE000BE427B /* LaunchScreen.xib */; };
 		846B59631AEE9CE100BE427B /* Cooter_InvestigationsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 846B59621AEE9CE100BE427B /* Cooter_InvestigationsTests.m */; };
+		AE05BBE91B116BB700CF40AE /* PDFImageConverter in Resources */ = {isa = PBXBuildFile; fileRef = AE05BBE81B116BB700CF40AE /* PDFImageConverter */; };
+		AE05BBEB1B116BC400CF40AE /* PDFPageConverter in Resources */ = {isa = PBXBuildFile; fileRef = AE05BBEA1B116BC400CF40AE /* PDFPageConverter */; };
+		AE05BBED1B11946100CF40AE /* Wizard in Resources */ = {isa = PBXBuildFile; fileRef = AE05BBEC1B11946100CF40AE /* Wizard */; };
+		AE05BBEF1B13036400CF40AE /* Icons in Resources */ = {isa = PBXBuildFile; fileRef = AE05BBEE1B13036400CF40AE /* Icons */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,18 +35,16 @@
 		846B59421AEE9CE000BE427B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		846B59441AEE9CE000BE427B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		846B59451AEE9CE000BE427B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		846B59471AEE9CE000BE427B /* RootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RootViewController.h; sourceTree = "<group>"; };
-		846B59481AEE9CE000BE427B /* RootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RootViewController.m; sourceTree = "<group>"; };
-		846B594A1AEE9CE000BE427B /* DataViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataViewController.h; sourceTree = "<group>"; };
-		846B594B1AEE9CE000BE427B /* DataViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataViewController.m; sourceTree = "<group>"; };
-		846B594D1AEE9CE000BE427B /* ModelController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModelController.h; sourceTree = "<group>"; };
-		846B594E1AEE9CE000BE427B /* ModelController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModelController.m; sourceTree = "<group>"; };
 		846B59511AEE9CE000BE427B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		846B59531AEE9CE000BE427B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		846B59561AEE9CE000BE427B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		846B595C1AEE9CE100BE427B /* Cooter_InvestigationsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Cooter_InvestigationsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846B59611AEE9CE100BE427B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		846B59621AEE9CE100BE427B /* Cooter_InvestigationsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cooter_InvestigationsTests.m; sourceTree = "<group>"; };
+		AE05BBE81B116BB700CF40AE /* PDFImageConverter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PDFImageConverter; path = ../PDFImageConverter; sourceTree = "<group>"; };
+		AE05BBEA1B116BC400CF40AE /* PDFPageConverter */ = {isa = PBXFileReference; lastKnownFileType = folder; name = PDFPageConverter; path = ../PDFPageConverter; sourceTree = "<group>"; };
+		AE05BBEC1B11946100CF40AE /* Wizard */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Wizard; path = ../Wizard; sourceTree = "<group>"; };
+		AE05BBEE1B13036400CF40AE /* Icons */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icons; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +68,10 @@
 		846B59341AEE9CE000BE427B = {
 			isa = PBXGroup;
 			children = (
+				AE05BBEE1B13036400CF40AE /* Icons */,
+				AE05BBEC1B11946100CF40AE /* Wizard */,
+				AE05BBEA1B116BC400CF40AE /* PDFPageConverter */,
+				AE05BBE81B116BB700CF40AE /* PDFImageConverter */,
 				846B593F1AEE9CE000BE427B /* Cooter_Investigations */,
 				846B595F1AEE9CE100BE427B /* Cooter_InvestigationsTests */,
 				846B593E1AEE9CE000BE427B /* Products */,
@@ -89,12 +92,6 @@
 			children = (
 				846B59441AEE9CE000BE427B /* AppDelegate.h */,
 				846B59451AEE9CE000BE427B /* AppDelegate.m */,
-				846B59471AEE9CE000BE427B /* RootViewController.h */,
-				846B59481AEE9CE000BE427B /* RootViewController.m */,
-				846B594A1AEE9CE000BE427B /* DataViewController.h */,
-				846B594B1AEE9CE000BE427B /* DataViewController.m */,
-				846B594D1AEE9CE000BE427B /* ModelController.h */,
-				846B594E1AEE9CE000BE427B /* ModelController.m */,
 				846B59501AEE9CE000BE427B /* Main.storyboard */,
 				846B59531AEE9CE000BE427B /* Images.xcassets */,
 				846B59551AEE9CE000BE427B /* LaunchScreen.xib */,
@@ -210,9 +207,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE05BBEF1B13036400CF40AE /* Icons in Resources */,
 				846B59521AEE9CE000BE427B /* Main.storyboard in Resources */,
 				846B59571AEE9CE000BE427B /* LaunchScreen.xib in Resources */,
+				AE05BBE91B116BB700CF40AE /* PDFImageConverter in Resources */,
+				AE05BBED1B11946100CF40AE /* Wizard in Resources */,
 				846B59541AEE9CE000BE427B /* Images.xcassets in Resources */,
+				AE05BBEB1B116BC400CF40AE /* PDFPageConverter in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,11 +231,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				846B594C1AEE9CE000BE427B /* DataViewController.m in Sources */,
 				846B59461AEE9CE000BE427B /* AppDelegate.m in Sources */,
-				846B594F1AEE9CE000BE427B /* ModelController.m in Sources */,
 				846B59431AEE9CE000BE427B /* main.m in Sources */,
-				846B59491AEE9CE000BE427B /* RootViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +366,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -381,6 +380,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -437,6 +437,7 @@
 				846B59681AEE9CE100BE427B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		846B59691AEE9CE100BE427B /* Build configuration list for PBXNativeTarget "Cooter_InvestigationsTests" */ = {
 			isa = XCConfigurationList;
@@ -445,6 +446,7 @@
 				846B596B1AEE9CE100BE427B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

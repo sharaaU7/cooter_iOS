@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>1.10 Apples and Oranges</h3>
+
+<p>You have <code>x</code> apples. Bob trades 3 oranges for 5 apples. He does not accept trades with cut fruit. How many oranges can you get from Bob and how many apples will you have left?</p>
+
+<p>The number of apples you will have left should be stored a variable named <code>apples</code>. The number of oranges you will have after all the trades should be stored in a variable named <code>oranges</code>.</p>
+
+  </section>
+</div>
+</body>
+</html>

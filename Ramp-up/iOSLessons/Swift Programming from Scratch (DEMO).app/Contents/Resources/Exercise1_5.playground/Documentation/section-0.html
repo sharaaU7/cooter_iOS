@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>1.5 L Area</h3>
+
+<p>You are given four variables <code>width</code>, <code>height</code>, <code>x</code>, <code>y</code> that describe the dimensions of a L-shape as shown in the image below. Determine the perimeter and area of the described L-shape. Store the value of the perimeter in a variable named <code>perimeter</code>, and the area in a variable named <code>area</code>.</p>
+
+<p><img src="image0.png" alt=""></p>
+
+  </section>
+</div>
+</body>
+</html>

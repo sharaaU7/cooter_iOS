@@ -1,0 +1,5 @@
+if (number1 == (sum + diff) / 2 && number2 == sum - number1) {
+	println("Correct")
+} else {
+	println("Wrong")
+}

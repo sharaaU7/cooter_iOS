@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+
+var exerciseId = "2";
+var chapterId = "2";
+
+function submit() {
+    startLoading();
+    
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+          var jsonText = req.responseText;
+          var jsonData = JSON.parse(jsonText);
+
+          var resultDiv = document.getElementById("resultDiv");
+
+          // update the status
+          if (jsonData["status"] == 0) {
+            resultDiv.innerHTML = '<span style="color:#FF3300;">Not yet :)</span>';
+          } else {
+            resultDiv.innerHTML = '<span style="color:#00CC00;">Done!</span>';
+
+            // replace the submit button with a next exercise button
+            var submitTd = document.getElementById("submit");
+            submitTd.innerHTML = '<button onclick="nextExercise()">Next exercise</button>';
+          }
+          
+          var testsDiv = document.getElementById("testsDiv");
+
+          testsDiv.innerHTML = jsonData["tests"];
+
+          stopLoading();
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/eval/" + chapterId + "/" + exerciseId, true);
+    req.send();
+}
+
+function nextExercise() {
+    startLoading();
+    
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+          var jsonText = req.responseText;
+          var jsonData = JSON.parse(jsonText);
+
+          stopLoading();
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/nextExercise/" + chapterId + "/" + exerciseId, true);
+    req.send();
+}
+
+function startLoading() {
+  document.getElementById("ajax-loading").innerHTML = '<img src="ajax-loader.gif"/>';
+}
+
+function stopLoading() {
+  document.getElementById("ajax-loading").innerHTML = '';
+}
+
+window.onload = function() {
+
+}
+
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <table>
+    <tr>
+      <td id="submit"><button onclick="submit()">Submit</button></td>
+      <!-- <td id="submit-extra"><button onclick="submit()">Submit</button></td> -->
+      <td id="ajax-loading"></td>
+    </tr>
+  </table>
+  </section>
+
+  <section class="section">
+    <div id="resultDiv"></div>
+  </section>
+
+  <section class="section">
+    <div id="testsDiv"></div>
+  </section>
+
+</div>
+
+
+
+
+</body>
+</html>

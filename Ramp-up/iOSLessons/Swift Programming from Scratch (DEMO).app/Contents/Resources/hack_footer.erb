@@ -1,0 +1,14 @@
+////////////////////////////////////////////////////////////////////////////////////
+println("MuchSuperDuperMegaCoolAwesomeHACK")
+
+<% expectedDeclationValues.each do |sym_info| %><% symbol, value = sym_info %>
+	<% if symbols.include? symbol %>
+		println("<%= symbol %> \(<%= symbol %>)")
+	<% end %>
+<% end %>
+
+<% expectedDeclarations.each do |symbol, message| %>
+	<% if symbols.include? symbol %>
+		println("<%= symbol %> \(<%= symbol %>)")
+	<% end %>
+<% end %>

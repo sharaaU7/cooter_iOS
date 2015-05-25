@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>2.4 Two of the same</h3>
+
+<p>You are given three variables <code>a</code>, <code>b</code> and <code>c</code>. Check if at least two variables have the same value. If at leat two variables have the same value print <code>At least two variables have the same value</code> otherwise print <code>All the values are different</code>.</p>
+
+  </section>
+</div>
+</body>
+</html>

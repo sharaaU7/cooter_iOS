@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>2.6 Leap Year</h3>
+
+<p>You are given a <code>year</code>, determine if it&#39;s a leap year. A leap year is a year containing an extra day. It has 366 days instead of the normal 365 days. The extra day is added in February, which has 29 days instead of the normal 28 days. Leap years occur every 4 years. 2012 is a leap year and so is 2016.
+Except that every 100 years special rules apply. Years that are divisible by 100 are not leap years if they are not divisible by 400. For example 1900 was not a leap year, but 2000 was.
+Print the year followed by <code>is a leap year!</code> or <code>is not a leap year!</code> depending on the case.</p>
+
+  </section>
+</div>
+</body>
+</html>

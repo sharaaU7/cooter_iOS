@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>2.11 Hitpoints</h3>
+
+<p>You are working on a videogame where the character has a certain number of hitpoints(HP) ranging from 0 to 100.<br>
+100 represents full health<br>
+0 represents dead.<br>
+You want to add regenerating health to the game using the following rules:</p>
+
+<ul>
+<li> HP always regenerates up to numbers of the form X0 (75 -&gt; 80 , 32 -&gt; 40 ...)</li>
+<li> When HP is below 20 it regenerates up to 20 (13 -&gt; 20, 5 -&gt; 20, ...)</li>
+<li> If the character has 0 HP then he doesn&#39;t regenerate life (he&#39;s dead)</li>
+</ul>
+
+<p>Given the current hp of the character stored in a variable <code>hp</code> print the <code>hp</code> the player will have after regenerating life.</p>
+
+  </section>
+</div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+if (sum == a + b) {
+	println("Correct")
+} else {
+	println("Wrong")
+}

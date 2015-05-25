@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Section 1</title>
+  <meta id="xcode-display" name="xcode-display" content="render">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+</head>
+<body>
+<script type="text/javascript">
+function loadAPI() {
+    var req = new XMLHttpRequest();
+
+    req.onreadystatechange = function() {
+        if (req.responseText != null && req.responseText != "") {
+       		document.getElementById("resultdiv").innerHTML = req.responseText;
+        }
+    }
+
+    req.open("GET", "http://127.0.0.1:1337/api/get_info/1", true);
+    req.send();
+}
+
+function initEvalAPI() {
+	document.getElementById("resultdiv").innerHTML = "loading data";
+}
+
+window.onload = function() {
+}
+</script>
+
+<div class="content-wrapper">
+  <section class="section">
+  <h3>2.5 Breakfast</h3>
+
+<p>You are working on a smart-fridge. The smart-fridge knows when you put inside of it eggs and bacon in days. You know that eggs spoils after 3 weeks <em>(21 days)</em> and bacon after one week <em>(7 days)</em>. Given <code>baconAge</code> and <code>eggsAge</code>(in days) determine if you can cook bacon and eggs or what ingredients you need to throw out.<br>
+If you cook bacon and eggs print <code>you can cook bacon and eggs</code>. If you need to throw out any ingredients for each one print a line with the text <code>throw out ingredient</code> (<code>throw out bacon</code> or <code>throw out eggs</code>) in any order.</p>
+
+  </section>
+</div>
+</body>
+</html>

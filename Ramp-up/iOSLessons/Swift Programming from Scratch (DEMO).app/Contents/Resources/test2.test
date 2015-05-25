@@ -1,0 +1,5 @@
+if (secondsInAYear == 60 * 60 * 24 * 365) {
+	println("Correct")
+} else {
+	println("Wrong")
+}

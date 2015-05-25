@@ -1,0 +1,5 @@
+if (perimeter == 2 * (width + height) && perimeter == (width * height - (width - x) * (height - y))) {
+	println("Correct")
+} else {
+	println("Wrong")
+}
